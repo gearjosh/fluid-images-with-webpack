@@ -55,11 +55,32 @@ body {
   width: 24%;
 }
 
+.image {
+  flex-shrink: 0;
+}
+
+.image-container {
+  height: 600px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 100%;
+  }
+}
+
+
+
 /* TABLET RULES */
 
 /*landscape*/
 
 @media screen and (max-width: 1250px) {
+  .image-container img {
+    width: 952px;
+  }
+
   .header h1 {
     font-size: calc(5rem);
     margin: 0 auto;
@@ -84,6 +105,14 @@ body {
 /*portrait*/
 
 @media screen and (max-width: 950px) {
+  .image-container {
+    height: 500px;
+    align-items: flex-end;
+    img {
+      width: 850px;
+    }
+  }
+
   .content-big {
     background-color: lavenderBlush;
   }
@@ -103,6 +132,15 @@ body {
 /* MOBILE RULES */
 
 @media screen and (max-width: 550px) {
+  .image-container {
+    align-items: flex-end;
+    height: 400px;
+    img {
+      width: 750px;
+    }
+  }
+
+
   .header {
     height: 75px;
   }
