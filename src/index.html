@@ -12,12 +12,13 @@
     <div class="container">
       <div class="content image-container">
 
-        <img class="image"
-             srcset="assets/images/sunset-500.jpg 500w,
-                     assets/images/sunset-1000.jpg 1000w,
-                     assets/images/sunset.jpg 2000w"
-             src="assets/images/sunset.jpg"
-             alt="a pretty sunset">
+        <picture class="content image-container">
+          <source media="(max-width: 600px)" srcset="./assets/images/sunset-mobile-500.jpg">
+          <source media="(max-width: 950px)" srcset="./assets/images/sunset-tablet-1000.jpg">
+          <img class="image"
+          src="./assets/images/sunset.jpg"
+          alt="a pretty sunset">
+    </picture>
 
     </div>
       <div class="content-grid">

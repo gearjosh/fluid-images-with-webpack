@@ -106,10 +106,9 @@ body {
 
 @media screen and (max-width: 950px) {
   .image-container {
-    height: 500px;
-    align-items: flex-end;
+    height: auto;
     img {
-      width: 850px;
+      width: 100%;
     }
   }
 
@@ -133,10 +132,10 @@ body {
 
 @media screen and (max-width: 550px) {
   .image-container {
-    align-items: flex-end;
+    justify-content: center;
     height: 400px;
     img {
-      width: 750px;
+      width: 100%;
     }
   }
 
